@@ -4,30 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width"
         <title>
-            Yukii Look!
+            The speedometer of life <br>
+           
         </title>
     </head> 
 <body>
-    <h1>Hello!</h1>
-    <p>
-        I am making a simple page for test. Please work!
-    </p>
-    <img src="https://i.pinimg.com/originals/fa/de/1f/fade1f9fe527bbb34bc3467628c6061d.png" alt="Jenny all kawaii" width=300>
-    <p>
-        Haii yuki, or anyone that's also reading this page. I'm new to html and stuff soo i dunno how long till i get the <br> 
-        hang of it. I enrolled on a HTML course to see if i can learn some stuff. 
-        <br>I can do it!. 
-    </p>
-    <h2>
-        What i like most about this idea. 
-    </h2>
-        <p>
-            Well i mean making an app is a nice accomplishment personally. 
-            Yeah sure <br> it's not the biggest thing in the world but i made it dammit. And i like that
-         <b>
-         
-        </p>
- 
+ <p>Time: <span id="datetime"></span></p>
+ <script>
+  var time = getTime();
+  document.getElementById("datetime").innerHTML = time.toLocaleTimeString();
+ </script>
  
 </body>
 </html>
