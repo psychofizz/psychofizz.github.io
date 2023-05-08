@@ -1,19 +1,136 @@
 <!DOCTYPE html>
- <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width"
-        <title>
-            The speedometer of life <br>
-           
-        </title>
-    </head> 
-<body>
- <p>Time: <span id="datetime"></span></p>
- <script>
-  var time = getTime();
-  document.getElementById("datetime").innerHTML = time.toLocaleTimeString();
- </script>
- 
-</body>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/aa7c4899d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Psychofizz</title>
+  </head>
+  <body>
+    <main id="main-section">
+      <section id="sidebar" class="fade-in">
+        <div id="profile-picture">
+          <div class="background-image"></div>
+          <img
+            class="overlay-image"
+            src="assets/img/profile.jpeg"
+            alt="Top Image"
+          />
+        </div>
+        <div class="info-sidebar fade-in">
+          <span class="title-dark">Elvis Durón</span>
+          <span class="title-sub"
+            >I am a UNAH university student and also involved in the upcoming
+            production of Fabulas Ad Lucem</span
+          >
+          <span class="title-sub">Socials: </span>
+          <div class="socials-container">
+            <a href="https://github.com/psychofizz"
+              ><i class="fa-brands fa-github"></i></a
+            ><a href="mailto:psychofizz@pm.me">
+              <i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/elvis-duron-178949275/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="main-content" class="fade-in-slower">
+        <div class="section-main-content">
+          <div class="title">About Me.</div>
+          <p>
+            I'm a beginner web developer who can help you with pretty much
+            anything, you can rely on me to deliver (mostly). I've got a lot of
+            knowledge on Linux systems if you ever need that, also a bit of
+            knowledge on film and video production, mostly from projects and
+            being really curious on how cameras and the big blockbusters were
+            made.
+          </p>
+        </div>
+
+        <div class="section-main-content">
+          <div class="title">Projects.</div>
+          <div class="project-main">
+            <div class="project-container">
+              <img src="assets/img/fal.png" alt="" />
+              <span class="container-title">Fabulas Ad Lucem</span>
+              <span class="container-p"
+                >I'm currently working to deliver the website ontime</span
+              >
+            </div>
+
+            <div class="project-container">
+              <img src="assets/img/budgetboss.png" alt="" />
+              <span class="container-title">Budget Boss</span>
+              <span class="container-p"
+                >A Custom Linux ISO me and an associate made.
+              </span>
+            </div>
+
+            <div class="project-container">
+              <img src="assets/img/documentary.jpg" alt="" />
+              <span class="container-title">US/Honduras Doc.</span>
+              <span class="container-p"
+                >Editing/Blender modeling in US Policy Doc.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-main-content">
+          <div class="title">Skills.</div>
+          <div class="skills-container">
+            <h2>Hardware Knowledge</h2>
+            <p>
+              I've always been fascinated by how computers work internally so i
+              took it upon myself to learn 6502 Assembly and to study Linux from
+              Scratch.
+            </p>
+            <h2>3D Modelling</h2>
+            <p>
+              If you need something modelled, textured and rendered in Blender,
+              im your guy, don't tell nobody but i've made MMD videos to garner
+              experience with the program.
+            </p>
+            <h2>Design</h2>
+            <p>
+              I'm always trying to learn more about UI and UX, if something
+              doesn't feel right it's because it didn't consider how humans are.
+              We've all run into norman doors at some point.
+            </p>
+            <h2>Video Production</h2>
+            <p>
+              It's ad-hoc to Blender modelling and design, you gain an eye for
+              making movies, for telling compelling stories through nothing but
+              visual and sound.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-main-content">
+          <div class="title">Technical Knowledge.</div>
+          <div class="skills-container">
+            <h3>Frontend: HTML5, CSS3</h3>
+            <h3>Mobile: Android Kotlin</h3>
+            <h3>
+              Design Tools: Photoshop, Illustrator, Premiere Pro, Davinci
+              Resolve
+            </h3>
+            <h3>Backend: Node, Express, WordPress,</h3>
+            <h3>Languages: Python, TypeScript, Java, ASM</h3>
+            <h3>Continous Integration: Docker, Podman</h3>
+            <h3>Sysadmin: Bash, Kubernetes</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
